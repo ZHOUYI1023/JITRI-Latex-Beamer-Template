@@ -1,4 +1,3 @@
-*.texpadtmp
 *.aux
 *.bbl
 *.bcf
@@ -12,4 +11,3 @@
 *.snm
 *.gz
 *.toc
-*.pdf
