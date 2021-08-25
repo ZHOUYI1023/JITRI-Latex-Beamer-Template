@@ -37,7 +37,7 @@ This template can be useful for the JITRI researchers.
 
 Copy or download the project.
   
-- <b>Github:</b> https://github.com/ZHOUYI1023/JITIR-Latex-Beamer-Template
+- <b>Github:</b> https://github.com/ZHOUYI1023/JITRI-Latex-Beamer-Template
 ## Tips
 
 Some tips for using this template
