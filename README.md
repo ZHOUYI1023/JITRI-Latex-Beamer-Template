@@ -1,6 +1,6 @@
 <!-- Title -->
 <div align="center">
-    <h1><b>XJTLU Beamer Template</b></h1>
+    <h1><b>JITRI Beamer Template</b></h1>
 </div>
 
 <div align="center">
@@ -8,14 +8,6 @@
 </div>
 <br/>
 
-<!-- Badges -->
-[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yaoshanliang/XJTLU-Beamer-Template)
-[![GitHub issues](https://img.shields.io/github/issues/yaoshanliang/XJTLU-Beamer-Template)](https://github.com/yaoshanliang/XJTLU-Beamer-Template/issues)
-[![GitHub stars](https://img.shields.io/github/stars/yaoshanliang/XJTLU-Beamer-Theme)](https://github.com/yaoshanliang/XJTLU-Beamer-Template/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yaoshanliang/XJTLU-Beamer-Template)](https://github.com/yaoshanliang/XJTLU-Beamer-Template/network)
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/yaoshanliang/XJTLU-Beamer-Template)
-[![Overleaf badge](https://img.shields.io/badge/Is_in_Oveleaf_Repository%3F-Yes!-<COLOR>.svg)](https://shields.io/)
 
 <!-- Table of Contents -->
 <p align="center">
@@ -27,28 +19,25 @@
 
 <!-- Sections -->
 ## What is it?
-Thanks to [Template Beamer UFC](https://github.com/maumneto/TemplateBeamerUFC). This template is modified based on that project.
+This template is inspired and modified based on [XJTLU-Beamer-Template](https://github.com/yaoshanliang/XJTLU-Beamer-Template).
 
-This project aims to create a template for presentation for the Xi’an Jiaotong-Liverpool University (XJTLU). It was created a class called **xjtlu_format.cls** with a set of environments and commands related to the document. This template is not an official document from the XJTLU. However, this template can be used to create classes, presentations, short courses, etc.
+
+This project aims to create a template for presentation for the Jiangsu Industrial Technology Research Institute (JITRI). It was created a class called **jitri_format.cls** with a set of environments and commands related to the document. This template is not an official document from the JITRI. However, this template can be used to create classes, presentations, short courses, etc.
 
 ## For Whom?
 
-This template can be useful for the XJTLU professors and students.
+This template can be useful for the JITRI researchers.
 
-- <b>Professors:</b> for creating classes and presentations
+- <b>Researchers:</b> for presentations
   
-- <b>Students:</b> for assignments and presentations
+- <b>Students:</b> for meeting, viva and dissertation defense
 
-- <b>Others:</b> for works and presentations
-
+- <b>Employees:</b> for commercial presentations
 ## Usage
 
 Copy or download the project.
-
-- <b>Overleaf:</b> https://www.overleaf.com/latex/templates/xjtlu-beamer-template/sfrvnnpcsmgh
   
-- <b>Github:</b> https://github.com/yaoshanliang/XJTLU-Beamer-Template
-
+- <b>Github:</b> https://github.com/ZHOUYI1023/JITIR-Latex-Beamer-Template
 ## Tips
 
 Some tips for using this template
@@ -111,9 +100,17 @@ Some tips for using this template
 \successbox{testando o success box}
 ```
 
+### Videos
+
+Use the `media9` package to include videos as 
+```tex
+\includemovie{width}{height}{videos/xxx.avi}
+```
+
 ### Codes
 
 It is possible to insert codes in this presentation. This template uses two packages for algorithms: `algorithm2e` and `listings`. 
+
 
 - **Documentation** 
   

@@ -1,25 +1,26 @@
-\documentclass{libs/XJTLU_format}
+\documentclass{libs/JITRI_format}
 % Inserting the preamble file with the packages
 \input{libs/preamble.tex}
 % Inserting the references file
 \bibliography{references.bib}
 
 % Title
-\title[XJTLU Beamer Template]{\huge\textbf{XJTLU Beamer Template}}
+\title[JITRI Beamer Template]{\huge\textbf{JITRI Beamer Template}}
 % Subtitle
 \subtitle{Creating Presentations}
 % Author of the presentation
 \author{Author}
 % Institute's Name
-\institute[XJTLU]{
+\institute[JITRI]{
     % email for contact
-    \normalsize{\email{author@xjtlu.edu.cn}}
+    \normalsize{\email{author@xxx.xxx
+    .xx}}
     \newline
     % Department Name
-    \department{School of Advanced Technology}
+    \department{Institute of Deep Perception Technology}
     \newline
     % University name
-    \university{Xi’an Jiaotong-Liverpool University}
+    \university{Jiangsu Industrial Technology Research Institute}
 }
 % date of the presentation
 \date{\today}
@@ -52,9 +53,8 @@
 
 \begin{frame}
     \begin{itemize}[<+-| alert@+>] % 当然，除了alert，手动在里面插 \pause 也行
-    	\item This is a slide template created by latex for XJTLUers.
-        \item Overleaf  \\ \url{https://www.overleaf.com/latex/templates/xjtlu-beamer-template/sfrvnnpcsmgh}
-        \item GitHub \\ \url{https://github.com/yaoshanliang/XJTLU-Beamer-Template}
+    	\item This is a slide template created by latex for JITRIers.
+        \item GitHub \\ \url{https://github.com/ZHOUYI1023/JITIR-Latex-Beamer-Template}
     \end{itemize}
     
     \note {Write your notes.\\}
@@ -70,20 +70,9 @@
 \begin{frame}{Usage}
     \begin{itemize}
         \item Beamer is a powerful and flexible \LaTeX{} class to create great looking presentations.   \url{https://www.overleaf.com/learn/latex/Beamer}
-        \item Modify from Template Beamer UFC \cite{origin}
+        \item Modify from XJTLU Beamer template \cite{origin}
     \end{itemize}
 \end{frame}
-
-\subsection{Features}
-
-\begin{frame}{Features}
-	The visual design follows \href{https://www.xjtlu.edu.cn/en/about/professional-services/centre-for-knowledge-and-information/university-marketing-and-communications/visual-identity-assets}{\emph{VISUAL IDENTITY ASSETS}} from XJTLU.
-    \begin{enumerate}
-        \item {XJTLU \example{NAVY} (RGB: 1, 54, 68)}
-        \item {XJTLU \example{PURPLE} (RGB: 206, 87, 193)}
-    \end{enumerate}
-\end{frame}
-
 
 \section{Methodology}
 
@@ -201,24 +190,42 @@
 \begin{frame}{Figures}
     \begin{figure}
         \centering
-        \caption{Logo of XJTLU.}
-        \includegraphics[scale=0.5]{libs/XJTLU_logo.png}
-        \source{Description of XJTLU}
-        \label{fig:XJTLU_logo}
+        \includegraphics[scale=0.5]{images/JITRI_logo.png}
+        \caption{Logo of JITRI}
+        \label{fig:JITRI_logo}
     \end{figure}
+\end{frame}
+
+\subsection{Videos}
+\begin{frame}{Videos}
+  \centering
+  \includemovie{1\linewidth}{0.6\textheight}{videos/radar_vision.avi}
 \end{frame}
 
 \subsection{Tables}
 \begin{frame}{Tables}
-\begin{table}[hbt]
-  \begin{tabular}{l|cc}
-    1& 2& \\
-    \hline
-    3& 4& \\
-    5& 6&
-  \end{tabular}
-  \caption{}
-\end{table}
+    Tables can be automatically generated from \\ \url{https://www.tablesgenerator.com/}\\
+    Use adjustbox package to shirnk the table.
+    \begin{table}[]
+        \begin{adjustbox}{width=\textwidth, totalheight=\textheight-2\baselineskip,keepaspectratio}
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        Dataset & Sensors & Feature & Tasks \\ \hline
+        nuScenes & \begin{tabular}[c]{@{}c@{}}Radar+Lidar+Camera\\ +Map+GPS/IMU\end{tabular} & Large & Detection+Tracking \\ \hline
+        Oxford RobotCar & \begin{tabular}[c]{@{}c@{}}Scanning Radar+Lidar\\ +Camera+GPS/IMU\end{tabular} & Large & Odometry \\ \hline
+        RADIATE & \begin{tabular}[c]{@{}c@{}}Scanning Radar\\ +Lidar+Camera\end{tabular} & Adverse Weather & \begin{tabular}[c]{@{}c@{}}Detection+Tracking\\ +Odometry\end{tabular} \\ \hline
+        MulRan & Scanning Radar+Lidar & \begin{tabular}[c]{@{}c@{}}Multiple Revisits \\ of The Same Place\end{tabular} & Place Recognition \\ \hline
+        Astyx HiRes & Radar +Lidar+Camera & 4D Imaging Radar & 3D Detection \\ \hline
+        Zendar & \begin{tabular}[c]{@{}c@{}}SAR+Lidar\\ +Camera+GPS/IMU\end{tabular} & SAR Imaging Radar & Detection+Tracking \\ \hline
+        CARRADA & Radar+Camera & Range-Azimuth-Doppler Annotation & Detection+Tracking \\ \hline
+        Radar Scenes & Radar+Camera & Radar Point Annotation & \begin{tabular}[c]{@{}c@{}}Radar Detection\\ +Radar Tracking\end{tabular} \\ \hline
+        DENSE & \begin{tabular}[c]{@{}c@{}}Radar+Lidar\\ +StereoCamera+GatedCamera\end{tabular} & Adverse Weather & 3D Detection+Tracking \\ \hline
+        CRUW & Radar+Camera & Range-Azimuth Annotation & Detection+Tracking \\ \hline
+        RaDICal & Radar+RGBD Camera+IMU & Raw Radar ADC Meaurements & 3D Detection+Tracking \\ \hline
+        \end{tabular}
+        \end{adjustbox}
+        \caption{Radar Datasets}
+    \end{table}
 
 \end{frame}
 
@@ -228,24 +235,12 @@
 \begin{frame}{Multi-columns}
     \begin{columns}{}
         \begin{column}{0.5\textwidth}
-            \justify
-            É possível colocar mais de uma coluna utilizando os comandos de $\backslash$begin\{column\}\{\} e $\backslash$end\{column\}
+            We present a radar-centric automotive dataset based on radar, lidar and camera data for the purpose of 3D object detection.
         \end{column}
         \begin{column}{0.5\textwidth}
-            \justify
-            Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
+            We present a radar-centric automotive dataset based on radar, lidar and camera data for the purpose of 3D object detection.
         \end{column}
     \end{columns}   
-    \begin{columns}{}
-        \begin{column}{0.5\textwidth}
-            \justify
-            É possível colocar mais de uma coluna utilizando os comandos de $\backslash$begin\{column\}\{\} e $\backslash$end\{column\}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \justify
-            Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
-        \end{column}
-    \end{columns}     
 \end{frame}
 
 

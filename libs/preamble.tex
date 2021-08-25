@@ -30,3 +30,22 @@
 % Package to use multicols
 \usepackage{multicol}
 \usepackage{transparent}
+% Package to shirink table
+\usepackage{adjustbox}
+% Package to play videos
+\usepackage{media9}%
+  \newcommand{\includemovie}[3]{%
+  \includemedia[%
+  width=#1,height=#2,%
+  activate=pagevisible,%
+  deactivate=pageclose,%
+  addresource=#3,%
+  flashvars={%
+  src=#3 % same path as in addresource!
+  &autoPlay=true % default: false; if =true, automatically starts playback after activation (see option ‘activation)’
+  &loop=true % if loop=true, media is played in a loop
+  &controlBarAutoHideTimeout=0 %  time span before auto-hide
+  }%
+  ]{}{StrobeMediaPlayback.swf}%
+  }% end of the new
+
